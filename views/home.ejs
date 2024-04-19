@@ -1,0 +1,43 @@
+<%- include("partials/header") %>
+<div class="col-12 text-center my-0">
+  <h1 class="title">Tasty Tracks</h1>
+  <p class="subtitle">Delivering Deliciousness To Your Doorstep</p>
+</div>
+<div class="row page">
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center logo theme">
+    <img
+      class="img-fluid mobile"
+      src="../images/Iphone copy.png"
+      alt="Iphone"
+    />
+    <img
+      class="img-fluid scooter"
+      src="https://static.vecteezy.com/system/resources/previews/010/871/789/original/3d-deliveryman-riding-scooter-png.png"
+      alt="Iphone"
+    /> 
+  </div>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6text-center my-4 py-4">
+    <main class="form-signin w-50 m-auto log">
+      <form class="login my-0 py-0">
+        <h1 class="title">Hello!</h1>
+        <h4 class="username"><%= users %></h4>
+        <a
+          class="btn btn-outline-dark w-100 py-3 my-4"
+          type="button"
+          href="/login"
+        >
+          Login
+        </a>
+        <a
+          class="btn btn-outline-dark w-100 py-3 my-4"
+          type="button"
+          href="/register"
+        >
+          Register
+        </a>
+      </form>
+    </main>
+    <%- include("partials/footer") %>
+  </div>
+</div>

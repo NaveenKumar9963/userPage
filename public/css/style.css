@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%, 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    overflow: auto;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.log{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
+}
+.login{
+    padding: 10px 20px;
+}
+.logo{
+    position:relative;
+}
+.mobile{
+    position: absolute;
+    z-index: 1;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: (5px, 5px, 10px, rgba(0, 0, 0, 0.2));
+    /* left: 10px; */
+}
+.map{
+    position: absolute;
+    overflow: hidden;
+}
+.page{
+    height: 80vh;
+}
+
+.scooter{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    width: 70%;
+    height: 80%;
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 700;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.link:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 5ms;
+}
+.head{
+    display: flex;
+}
+.navbar{
+    flex:0.2
+}
+li{
+    list-style-type: none;
+}
+.subtitle{
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.error-message{
+    color: red;
+}
+.username{
+    font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (min-width: 250px) and (max-width: 800px){
+   .logo{
+    display: none;
+    position: relative;
+   }
+   .scooter{
+    position: absolute;
+    top: 50px;
+   }
+}
+@media screen and (max-width:1050){
+    .logo{
+        display: none;
+        position: relative;
+       }
+       .scooter{
+        position: absolute;
+        top: 10px;
+       }
+}

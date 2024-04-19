@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+<div class="col-12 text-center my-0">
+  <h1 class="title">Tasty Tracks</h1>
+  <p class="subtitle">Delivering Deliciousness to Your Doorstep</p>
+</div>
+<div class="row page">
+  <div class="col-12 col-md-12 col-lg-6 logo text-center my-4 py-4 theme">
+    <img class="img mobile" src="https://help.apple.com/assets/656912ADA28BF1B7E90BF0F6/656912B3021EA3AD750FB887/en_US/d707e344a629e54cf9b13c8a4afabb23.png" alt="Iphone"/>
+    <img class="scooter" src="https://static.vecteezy.com/system/resources/previews/010/871/789/original/3d-deliveryman-riding-scooter-png.png" alt="Iphone"/>
+  </div>
+<div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center my-4 py-4">
+<main class="form-signin w-50 m-auto log">
+    <form action="/register" class="login" method="POST">
+      <h1 class="h3 mb-3 fw-normal">Register</h1>
+      <div class="form-floating">
+        <input type="text" class="form-control custom_input" id="floatingInput" placeholder="UserName" name="name">
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating my-4">
+        <input type="email" class="form-control custom_input" id="floatingInput" placeholder="name@example.com" name="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <% if (missing) { %>
+        <div class="error-message">
+            <%= missing %>
+        </div>
+    <% } %>
+      <button type="submit" class="btn btn-primary w-100 py-2 my-4" >Register</button>
+      <p>Or</p>
+      <div class="auth">
+        <div class="inside">
+      <a class="btn btn-lg btn-outline-dark mx-1 mb-1" href="/auth/google" role="button">
+        <i class="bi bi-google"></i>
+      </a>
+      <a class="btn btn-lg btn-outline-dark mx-1 mb-1" href="/auth/facebook" role="button">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a class="btn btn-lg btn-outline-dark mx-1 mb-1" href="/auth/github" role="button">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+    </div>
+    </form>
+  </main>
+<%- include("partials/footer") %>
